@@ -6,10 +6,7 @@ class Solution {
             if (num > 0) {
                 ++positive;
             }
-            else if (num == 0) {
-                continue;
-            }
-            else {
+            else if(num<0) {
                 ++negative;
             }
             result = Math.max(result, Math.max(positive, negative));
