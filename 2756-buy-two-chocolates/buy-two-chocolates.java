@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Solution {
     public int buyChoco(int[] price, int money) {
         Arrays.sort(price);
