@@ -3,16 +3,16 @@ class Solution {
         List<Integer> result = new ArrayList<>();
         for (int i = left; i <= right; i++) {
             int num = i;
-            boolean ok = true;
+            boolean flag = true;
             while (num > 0) {
                 int d = num % 10;
                 if (d == 0 || i % d != 0) {
-                    ok = false;
+                    flag = false;
                     break;
                 }
                 num /= 10;
             }
-            if (ok) result.add(i);
+            if (flag) result.add(i);
         }
         return result;
     }
