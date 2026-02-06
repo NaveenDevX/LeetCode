@@ -3,7 +3,7 @@ class Solution {
         int n = nums.length;
         if (n <= 1) return 0;
         Arrays.sort(nums);
-        int maxWindow = 0;
+        int maxWindow = Integer.MIN_VALUE;
         int i = 0;
         for (int j = 0; j < n; j++) {
             while (i < j && (long)nums[i] * k < nums[j]) {
