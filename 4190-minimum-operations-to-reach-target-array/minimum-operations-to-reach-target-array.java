@@ -1,0 +1,17 @@
+class Solution {
+    public int minOperations(int[] nums, int[] target) {
+        HashSet<Integer> set = new HashSet<>();
+        int n = nums.length;
+        for(int i=0;i<n;i++)
+        {
+            if(nums[i]!=target[i])
+            {
+                if(!set.contains(nums[i]))
+                {
+                    set.add(nums[i]);
+                }
+            }
+        }
+        return set.size();
+    }
+}
