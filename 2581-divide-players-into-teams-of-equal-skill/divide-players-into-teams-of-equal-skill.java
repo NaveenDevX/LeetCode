@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public long dividePlayers(int[] skill) {
         Arrays.sort(skill);
