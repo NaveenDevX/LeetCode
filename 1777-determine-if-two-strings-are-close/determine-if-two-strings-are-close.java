@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public boolean closeStrings(String word1, String word2) {
         int n = word1.length();
