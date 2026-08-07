@@ -1,8 +1,8 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
-        int [] prefix = new int[n+1];
-        int [] suffix = new int[n+1];
+        int [] prefix = new int[n];
+        int [] suffix = new int[n];
         prefix[0] = nums[0];
         suffix[n-1] = nums[n-1];
         for(int i=1;i<n;i++)
