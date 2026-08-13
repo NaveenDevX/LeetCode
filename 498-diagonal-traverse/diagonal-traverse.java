@@ -27,6 +27,13 @@ class Solution {
             res.addAll(diag);
         }
 
-        return res.stream().mapToInt(Integer::intValue).toArray();
+        int size = res.size();
+        int [] ans = new int[size];
+        for(int i=0;i<size;i++)
+        {
+            ans[i] = res.get(i);
+        }
+
+        return ans;
     }
 }
